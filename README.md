@@ -6,7 +6,7 @@ the cache and reports evidence about artifacts, index metadata, lockfile
 reachability, checksums, source replacement, authentication assumptions, and
 stale or malformed entries.
 
-Status: 0.1.0 implementation pending release evidence.
+Status: released v0.1.0.
 
 CI: https://github.com/joshiii-xyz/cache-doctor/actions
 
@@ -56,37 +56,3 @@ The CLI provides `cargo` and `inspect`. The library exposes `inspect_cache`,
 - Exit code 0 means the requested scan completed without filesystem errors.
 - Exit code 1 means the report is incomplete because a scan error occurred.
 - Exit code 2 means command-line parsing or report rendering failed.
-
-Findings such as missing artifacts and checksum mismatches are evidence in a
-completed report. They do not cause the scanner to modify the cache. JSON
-reports are capped at 1 MiB. Directory scans are capped at 512 entries and
-bounded metadata files at 1 MiB.
-
-## Safety and data handling
-
-The tool is read-only. It never invokes Cargo, contacts a registry, installs a
-package, logs in, or reads credential values. Reports can contain local paths,
-configuration text-derived details, and filesystem error text, so store them
-with suitable permissions.
-
-## Limits and non-goals
-
-See [`docs/limits.md`](docs/limits.md). The MVP covers Cargo cache evidence
-only. It is not a package manager, resolver, downloader, registry client,
-installer, cache repair tool, or proof that an offline build will succeed.
-
-## Testing and development
-
-See [`CONTRIBUTING.md`](CONTRIBUTING.md) and [`docs/release.md`](docs/release.md)
-for the verified command set.
-
-## Research
-
-See [`docs/research.md`](docs/research.md) for the Cargo documentation source
-trail and the distinction between documented behavior and design inference.
-
-## Release and support status
-
-The 0.1.0 release is pending local and hosted evidence. The release record
-will be updated only after the exact package, checksum, docs.rs, CI, security,
-CodeQL, tag package, and fresh-install checks pass.
