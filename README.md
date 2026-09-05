@@ -6,7 +6,7 @@ the cache and reports evidence about artifacts, index metadata, lockfile
 reachability, checksums, source replacement, authentication assumptions, and
 stale or malformed entries.
 
-Status: released v0.1.0.
+Status: 0.1.0 implementation pending release evidence.
 
 CI: https://github.com/joshiii-xyz/cache-doctor/actions
 
