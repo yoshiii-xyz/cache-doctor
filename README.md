@@ -8,7 +8,7 @@ stale or malformed entries.
 
 Status: 0.1.0 implementation pending release evidence.
 
-CI: https://github.com/joshiii-xyz/cache-doctor/actions
+CI: https://github.com/yoshiii-xyz/cache-doctor/actions
 
 ## Install
 
