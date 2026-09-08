@@ -5,7 +5,7 @@ edition = "2024"
 rust-version = "1.85"
 description = "A read-only offline Cargo cache evidence scanner"
 license = "MIT"
-repository = "https://github.com/joshiii-xyz/cache-doctor"
+repository = "https://github.com/yoshiii-xyz/cache-doctor"
 keywords = ["cargo", "cache", "offline", "checksum", "diagnostics"]
 categories = ["command-line-utilities", "development-tools"]
 
